@@ -1,3 +1,0 @@
-<apex:page controller="CommentController">
-    <h1>{!message}</h1>
-</apex:page>
