@@ -25,6 +25,23 @@ def get_response(user_input):
     if "payment" in message:
         return "Bot: We accept UPI, debit card, credit card, and net banking."
 
+    if "warranty" in message or "guarantee" in message:
+        return (
+            "Bot: Most products come with a 1-year warranty. "
+            "Please share the product name for exact details."
+        )
+
+    if "cancel" in message or "cancellation" in message:
+        return (
+            "Bot: You can cancel an order before it is shipped. "
+            "Please share your order ID for help."
+        )
+
+    if "hours" in message or "timing" in message or "open" in message:
+        return (
+            "Bot: Our support team is available from 9 AM to 6 PM, Monday to Saturday."
+        )
+
     if "contact" in message or "support" in message:
         return (
             "Bot: You can contact support at support@example.com or call 1800-123-456."
@@ -35,7 +52,7 @@ def get_response(user_input):
 
     return (
         "Bot: I can help with products, prices, orders, delivery, "
-        "returns, payments, and support."
+        "returns, payments, warranty, cancellation, hours, and support."
     )
 
 
