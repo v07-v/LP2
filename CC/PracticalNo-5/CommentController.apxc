@@ -1,0 +1,8 @@
+public class CommentController {
+    
+    public String message {get; set;}
+    
+    public CommentController() {
+        message = 'hey there!!!';
+    }
+}
